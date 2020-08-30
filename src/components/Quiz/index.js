@@ -1,9 +1,14 @@
 import React from "react";
+import Levels from "../Levels";
+import ProgressBar from "../ProgressBar";
+import Questions from "../Questions";
 
 const Quiz = ({ userData }) => {
   return (
     <div className="">
-      <h2>Pseudo : {userData.pseudo}</h2>
+      <Levels />
+      <ProgressBar />
+      <Questions />
     </div>
   );
 };

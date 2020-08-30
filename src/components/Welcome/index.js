@@ -22,7 +22,7 @@ const Welcome = (props) => {
         .then((doc) => {
           if (doc && doc.exists) {
             const myData = doc.data();
-            setUserSession(myData);
+            setUserData(myData);
           }
         })
         .catch((error) => {
